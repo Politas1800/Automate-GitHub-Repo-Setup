@@ -6,7 +6,7 @@ This project automates the setup of a GitHub repository, including cloning the r
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Politas1800/Automate-GitHub-Repo-Setup.git
    ```
 2. Navigate to the project directory:
    ```bash
