@@ -12,7 +12,20 @@ This project automates the setup of a GitHub repository, including cloning the r
    ```bash
    cd Automate-GitHub-Repo-Setup
    ```
-3. Install the required dependencies:
+3. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   ```
+4. Activate the virtual environment:
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On macOS and Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+5. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
