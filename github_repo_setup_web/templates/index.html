@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Setup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Repository Setup</h1>
+        <form id="setup-form">
+            <div class="form-group">
+                <label for="repo-url">GitHub Repository URL:</label>
+                <input type="text" id="repo-url" name="repo_url" required>
+            </div>
+            <div class="form-group">
+                <label for="custom-path">Custom Download Path (optional):</label>
+                <input type="text" id="custom-path" name="custom_path">
+            </div>
+            <div class="form-group">
+                <label for="python-version">Python Version:</label>
+                <input type="text" id="python-version" name="python_version" placeholder="Detecting..." readonly>
+            </div>
+            <div class="form-group">
+                <label for="custom-python-version">Custom Python Version (optional):</label>
+                <input type="text" id="custom-python-version" name="custom_python_version" placeholder="Enter custom version">
+            </div>
+            <button type="submit">Setup Repository</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Setup Result</h2>
+            <p id="result-message"></p>
+            <ul id="result-details"></ul>
+        </div>
+        <div id="loading" class="hidden">
+            <p>Setting up repository...</p>
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
